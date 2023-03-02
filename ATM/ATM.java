@@ -2,10 +2,8 @@ package ATM;
 
 import java.util.Scanner;
 
-public class ATM 
-{
-    public static void main(String[] args) 
-    {
+public class ATM {
+    public static void main(String[] args) {
         int pin = 1234;
         int balance = 10000;
 
@@ -21,14 +19,12 @@ public class ATM
 
         int password = scanner.nextInt();
 
-        if (password == pin) 
-        {
+        if (password == pin) {
             System.out.println("Enter your name");
             name = scanner.next();
             System.out.println("Welcome Dear: " + name);
 
-            while (true) 
-            {
+            while (true) {
                 System.out.println("Press 1 to View your Balance");
                 System.out.println("Press 2 to add money");
                 System.out.println("Press 3 for Withdrawl");
@@ -36,8 +32,7 @@ public class ATM
                 System.out.println("Press 5 to Exit");
 
                 int opt = scanner.nextInt();
-                switch (opt) 
-                {
+                switch (opt) {
                     case 1:
                         System.out.println("your current balance is" + balance);
                         break;
@@ -57,32 +52,29 @@ public class ATM
                         } else {
                             System.out.println("Withdrawl successfull");
                             balance = balance - WithdrawAmount;
-                            //balance = 500 - 10000 = 9500
-                            //shift+alt+F (Allign properly)
+                            // balance = 500 - 10000 = 9500
+                            // shift+alt+F (Allign properly)
                         }
                         break;
-                        case 4:
-                            System.out.println("Welcome " + name);
-                            System.out.println("Available balance is " + balance);
-                            System.out.println("Amount Deposited" + AddAmount);
-                            System.out.println("Amount Withdrawn" + WithdrawAmount);
-                            System.out.println("Thank You");
+                    case 4:
+                        System.out.println("Welcome " + name);
+                        System.out.println("Available balance is " + balance);
+                        System.out.println("Amount Deposited" + AddAmount);
+                        System.out.println("Amount Withdrawn" + WithdrawAmount);
+                        System.out.println("Thank You");
 
                         break;
-                            default:
-                            System.out.println("Press 5 to Exit");
+                    default:
+                        System.out.println("Press 5 to Exit");
                         break;
                 }
-                if(opt == 5)
-                {
+                if (opt == 5) {
                     System.out.println("Thank You");
                     break;
                 }
             }
-                
-        }
-        else
-        {
+
+        } else {
             System.out.println("Enter the correct Pin");
         }
     }
