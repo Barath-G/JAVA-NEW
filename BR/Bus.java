@@ -31,7 +31,5 @@ public class Bus {
     else
     System.out.println("Booking full. Try another date");
 }
-
-}
 }
 
