@@ -1,0 +1,15 @@
+import java.util.scanner;
+public class NewF
+{
+	public static void main(String args[])
+	{
+		System.out.println("Pyramid of Numbers in Java");
+		draw Pyramid of Numbers();
+		for (int i=0; i<5; i++){
+			for (int j=0; j<5; -i; j++){
+				System.out.print("");
+			}
+			for (int k=0; k<=i; k++);
+		}
+	}
+}
