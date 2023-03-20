@@ -14,6 +14,7 @@ public class ActionDao {
         String userid = "magicbill";
         String password = "magicbill";
         Connection con = null;
+        java.lang.Object Logger;
         try {
             //GENERATED ALWAYS AS IDENTITY (START WITH 1,INCREMENT BY 1)
             Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
